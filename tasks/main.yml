@@ -5,7 +5,6 @@
       name: ListenAddresses
       data: '[''{{ dns_client_dns_server_ip }}'']'
       type: multistring
-    notify: restart DNS
 
   - name: Check DNS Forwarders
     win_shell: |
